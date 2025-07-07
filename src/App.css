@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+  --clr--very-dark-blue: hsl(233, 47%, 7%);
+  --clr--dark-desaturated-blue: hsl(244, 38%, 16%);
+  --clr--soft-violet: hsl(277, 64%, 61%);
+  --clr--white-main-heading: hsl(0, 0%, 100%);
+  --clr--slight-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --clr--slight-white-stat-paragraph: hsla(0, 0%, 100%, 0.6);
+}
+
+main{
+  background-color: var(--clr--dark-desaturated-blue);
+  text-align: center;
+  border-radius: 1rem;
+  margin: 3rem 0;
+}
+
+img {
+  width: clamp(100%);
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+h1{
+  color: var(--clr--white-main-heading);
+  margin-bottom: 1rem;
+}
+
+.name-style{
+  color: var(--clr--slight-white-stat-paragraph);
+  font-family:'Lexend Deca', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+.insights{
+  color: var(--clr--soft-violet)
+}
+
+.container{
+  padding: 2rem;
+}
+
+p{
+  color: var(--clr--slight-white-main-paragraph);
+  margin-bottom: 2rem;
+
+}
+
+h2{
+  color: var(--clr--white-main-heading);
+}
+
+.picture{
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr--soft-violet);
+  opacity: 50%;
+  z-index: 2;
+  inset: 0;
+}
+
+@media (min-width: 40.7rem){
+
+  main{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .container{
+    padding: 2.5rem;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+
+  .picture{
+    width: 100%;
+    height: auto;
+    order: 1;
+    margin-left: auto;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  img{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .stat-div{
+    display: block;
+  }
+
+  .stat-sheet{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+}
