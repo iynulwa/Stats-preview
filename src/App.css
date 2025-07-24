@@ -94,7 +94,7 @@ h2{
     border-bottom-right-radius: 1rem;
   }
 
-  img{
+  img, .overlay{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-top-right-radius: 1rem;
